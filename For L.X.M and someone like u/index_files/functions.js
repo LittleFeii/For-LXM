@@ -1,5 +1,5 @@
 /*
- * /love.hackerzhou.me
+ * http://love.hackerzhou.me
  */
 
 // variables
