@@ -7,8 +7,8 @@
 *{ margin:0; padding:0; list-style:none;}
 
 #woituku #audio-btn{width: 44px;height: 44px; margin:100px auto;background-size: 100% 100%;}
-#woituku .on{background: url('images/music_on.png') no-repeat 0 0;-webkit-animation: rotating 1.2s linear infinite;animation: rotating 1.2s linear infinite;}
-#woituku .off{background: url('images/music_off.png') no-repeat 0 0;}
+#woituku .on{background: url('MusicButton/music_on.png') no-repeat 0 0;-webkit-animation: rotating 1.2s linear infinite;animation: rotating 1.2s linear infinite;}
+#woituku .off{background: url('MusicButton/music_off.png') no-repeat 0 0;}
 @-webkit-keyframes rotating {
 	from{
 		-webkit-transform: rotate(0deg);
@@ -48,7 +48,7 @@
 <!--代码部分begin-->
 <div id="woituku">
 <div id="audio-btn" class="on" onclick="woituku.changeClass(this,'media')">
-	<audio loop="loop" src="images/SeeYouAgain.mp3" id="media" preload="preload"></audio>
+	<audio loop="loop" src="MusicButton/SeeYouAgain.mp3" id="media" preload="preload"></audio>
 </div>
 </div>
 <script src="jquery.min.js"></script>
