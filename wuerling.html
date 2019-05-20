@@ -1,1 +1,98 @@
-��������
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>致这让人又爱又恨的双十一</title >
+<style>
+*{ margin:0; padding:0; list-style:none;}
+#woituku #audio-btn{width: 44px;height: 44px; margin:100px auto;background-size: 100% 100%; style="position:absolute; right:10px; top :0px; "}
+#woituku .on{background: url('MusicButton/music_on.png') no-repeat 0 0;-webkit-animation: rotating 1.2s linear infinite;animation: rotating 1.2s linear infinite;style="position:absolute; right:0px; top :0px; "}
+#woituku .off{background: url('MusicButton/music_off.png') no-repeat 0 0;}
+@-webkit-keyframes rotating {
+	from{
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+    	transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+</style>
+</head>
+<body>
+
+<!--代码部分begin-->
+<div id="woituku">
+<div id="audio-btn" class="off" onclick="woituku.changeClass(this,'media')" style="position:absolute; right:10px; top :0px; ">
+	<audio loop="loop" src="光棍.mp3" id="media" preload="preload"></audio>
+	
+	
+</div>
+</div>
+	<div style="position:absolute; right:0px; top :70px; ">
+		<p><b>光棍-胡歌</b></p>
+		</div>
+<script src="jquery.min.js"></script>
+<script>
+var woituku = {
+	changeClass: function (target,id) {
+       	var className = $(target).attr('class');
+       	var ids = document.getElementById(id);
+       	(className == 'on')
+           	? $(target).removeClass('on').addClass('off')
+           	: $(target).removeClass('off').addClass('on');
+       	(className == 'on')
+           	? ids.pause()
+           	: ids.play();
+   	},
+	play:function(){
+		document.getElementById('media').play();
+	}
+}
+woituku.play();
+<!--代码部分end-->
+</script>
+	
+	<!--<body background="背景001.jpg">  -->
+<h1 align="center"><b><font size=8 color=red>11.11——你准备好剁手了吗？</font></b>
+<p> &nbsp; </p>	
+	<p> &nbsp; </p>	
+	</h1>
+<!--/*原尺寸 787*472*/--!-->
+
+<p><img src="zz002.gif" width="787px"; height="472px"; style="position:absolute; left:0px; bottom :0px; "></p> 
+<p>&nbsp;</p>
+<p><font size="4">&nbsp; &nbsp; 这个双十一，我们主打的~~~</font>
+<b><font size="4">&nbsp;是情怀！！！</font></b> </p>
+<p><font size="4"> &nbsp; &nbsp;&nbsp;&nbsp;DUANG~ 就像左下角这张GIF，有没有很触及心灵[笑哭脸]。哈哈！开个玩笑吭。你别怪我随便捣鼓你头像就好。。。</font></p>
+<p> &nbsp; &nbsp;&nbsp;&nbsp;另外，本网站也想跟个“双十一购物狂欢节”的风儿，发波福利：复制如下红包口令，打开“支付宝-红包”，领取<b>“本站专属双十一超级无敌巨大惊喜VIP大红包”</b></p>
+<p><b> &nbsp; &nbsp;&nbsp;&nbsp;红包口令： <font color=magenta>儿科医生最可爱</font></b></p>
+<p> &nbsp; &nbsp;&nbsp;&nbsp;最后，我前几天在淘宝上看到一个暖手宝，感觉你可能会需要，了解一下？&nbsp;下面是链接：</p>
+  
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://detail.tmall.com/item.htm?spm=a230r.1.14.22.25ae7442TfJ4WA&id=560628041152&ns=1&abbucket=6&skuId=3538829412082">暖手宝，我中意那款蓝色的┓( ´-` )┏</a>  </p>
+	
+</body>
+</html>
